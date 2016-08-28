@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B50BB8BB1D6E0AEC00335F15 /* NSKDefaultImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB8BA1D6E0AEC00335F15 /* NSKDefaultImageLayout.swift */; };
+		B50BB8BC1D6E0AEC00335F15 /* NSKDefaultImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB8BA1D6E0AEC00335F15 /* NSKDefaultImageLayout.swift */; };
+		B50BB8BE1D6E0B1C00335F15 /* NSKRightImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB8BD1D6E0B1C00335F15 /* NSKRightImageLayout.swift */; };
+		B50BB8BF1D6E0B1C00335F15 /* NSKRightImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB8BD1D6E0B1C00335F15 /* NSKRightImageLayout.swift */; };
+		B50BB8C11D6E0B8A00335F15 /* NSKTopImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB8C01D6E0B8A00335F15 /* NSKTopImageLayout.swift */; };
+		B50BB8C21D6E0B8A00335F15 /* NSKTopImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB8C01D6E0B8A00335F15 /* NSKTopImageLayout.swift */; };
+		B50BB8C41D6E0B9A00335F15 /* NSKBottomImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB8C31D6E0B9A00335F15 /* NSKBottomImageLayout.swift */; };
+		B50BB8C51D6E0B9A00335F15 /* NSKBottomImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB8C31D6E0B9A00335F15 /* NSKBottomImageLayout.swift */; };
+		B566748D1D6F43C6007F8850 /* DecodeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B566748C1D6F43C6007F8850 /* DecodeTestViewController.swift */; };
+		B57C5C451D69C2B200BBF6FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C5C441D69C2B200BBF6FA /* AppDelegate.swift */; };
+		B57C5C471D69C2B200BBF6FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C5C461D69C2B200BBF6FA /* ViewController.swift */; };
+		B57C5C4A1D69C2B200BBF6FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57C5C481D69C2B200BBF6FA /* Main.storyboard */; };
+		B57C5C4C1D69C2B200BBF6FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57C5C4B1D69C2B200BBF6FA /* Assets.xcassets */; };
+		B57C5C4F1D69C2B200BBF6FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57C5C4D1D69C2B200BBF6FA /* LaunchScreen.storyboard */; };
+		B57C5C931D69C32700BBF6FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C5C921D69C32700BBF6FA /* AppDelegate.swift */; };
+		B57C5C951D69C32700BBF6FA /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C5C941D69C32700BBF6FA /* TVViewController.swift */; };
+		B57C5C981D69C32700BBF6FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57C5C961D69C32700BBF6FA /* Main.storyboard */; };
+		B57C5C9A1D69C32800BBF6FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57C5C991D69C32800BBF6FA /* Assets.xcassets */; };
+		B57C5CC21D69C3CE00BBF6FA /* NSKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C5CC11D69C3CE00BBF6FA /* NSKButton.swift */; };
+		B57C5CC31D69C3CE00BBF6FA /* NSKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C5CC11D69C3CE00BBF6FA /* NSKButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B50BB8BA1D6E0AEC00335F15 /* NSKDefaultImageLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSKDefaultImageLayout.swift; sourceTree = "<group>"; };
+		B50BB8BD1D6E0B1C00335F15 /* NSKRightImageLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSKRightImageLayout.swift; sourceTree = "<group>"; };
+		B50BB8C01D6E0B8A00335F15 /* NSKTopImageLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSKTopImageLayout.swift; sourceTree = "<group>"; };
+		B50BB8C31D6E0B9A00335F15 /* NSKBottomImageLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSKBottomImageLayout.swift; sourceTree = "<group>"; };
+		B566748C1D6F43C6007F8850 /* DecodeTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeTestViewController.swift; sourceTree = "<group>"; };
+		B57C5C411D69C2B200BBF6FA /* NSKButtonSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSKButtonSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57C5C441D69C2B200BBF6FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B57C5C461D69C2B200BBF6FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B57C5C491D69C2B200BBF6FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B57C5C4B1D69C2B200BBF6FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B57C5C4E1D69C2B200BBF6FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B57C5C501D69C2B200BBF6FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57C5C901D69C32700BBF6FA /* NSKButtonSwiftTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSKButtonSwiftTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57C5C921D69C32700BBF6FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B57C5C941D69C32700BBF6FA /* TVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
+		B57C5C971D69C32700BBF6FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B57C5C991D69C32800BBF6FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B57C5C9B1D69C32800BBF6FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57C5CC11D69C3CE00BBF6FA /* NSKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSKButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B57C5C3E1D69C2B200BBF6FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57C5C8D1D69C32700BBF6FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B57C5C381D69C2B200BBF6FA = {
+			isa = PBXGroup;
+			children = (
+				B57C5CC01D69C3C200BBF6FA /* Swift */,
+				B57C5C431D69C2B200BBF6FA /* NSKButtonSwift */,
+				B57C5C911D69C32700BBF6FA /* NSKButtonSwiftTV */,
+				B57C5C421D69C2B200BBF6FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B57C5C421D69C2B200BBF6FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B57C5C411D69C2B200BBF6FA /* NSKButtonSwift.app */,
+				B57C5C901D69C32700BBF6FA /* NSKButtonSwiftTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B57C5C431D69C2B200BBF6FA /* NSKButtonSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B57C5C441D69C2B200BBF6FA /* AppDelegate.swift */,
+				B57C5C461D69C2B200BBF6FA /* ViewController.swift */,
+				B566748C1D6F43C6007F8850 /* DecodeTestViewController.swift */,
+				B57C5C481D69C2B200BBF6FA /* Main.storyboard */,
+				B57C5C4B1D69C2B200BBF6FA /* Assets.xcassets */,
+				B57C5C4D1D69C2B200BBF6FA /* LaunchScreen.storyboard */,
+				B57C5C501D69C2B200BBF6FA /* Info.plist */,
+			);
+			path = NSKButtonSwift;
+			sourceTree = "<group>";
+		};
+		B57C5C911D69C32700BBF6FA /* NSKButtonSwiftTV */ = {
+			isa = PBXGroup;
+			children = (
+				B57C5C921D69C32700BBF6FA /* AppDelegate.swift */,
+				B57C5C941D69C32700BBF6FA /* TVViewController.swift */,
+				B57C5C961D69C32700BBF6FA /* Main.storyboard */,
+				B57C5C991D69C32800BBF6FA /* Assets.xcassets */,
+				B57C5C9B1D69C32800BBF6FA /* Info.plist */,
+			);
+			path = NSKButtonSwiftTV;
+			sourceTree = "<group>";
+		};
+		B57C5CC01D69C3C200BBF6FA /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				B57C5CC11D69C3CE00BBF6FA /* NSKButton.swift */,
+				B50BB8BA1D6E0AEC00335F15 /* NSKDefaultImageLayout.swift */,
+				B50BB8BD1D6E0B1C00335F15 /* NSKRightImageLayout.swift */,
+				B50BB8C01D6E0B8A00335F15 /* NSKTopImageLayout.swift */,
+				B50BB8C31D6E0B9A00335F15 /* NSKBottomImageLayout.swift */,
+			);
+			name = Swift;
+			path = ../Source/Swift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B57C5C401D69C2B200BBF6FA /* NSKButtonSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57C5C531D69C2B200BBF6FA /* Build configuration list for PBXNativeTarget "NSKButtonSwift" */;
+			buildPhases = (
+				B57C5C3D1D69C2B200BBF6FA /* Sources */,
+				B57C5C3E1D69C2B200BBF6FA /* Frameworks */,
+				B57C5C3F1D69C2B200BBF6FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSKButtonSwift;
+			productName = NSKButtonSwift;
+			productReference = B57C5C411D69C2B200BBF6FA /* NSKButtonSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B57C5C8F1D69C32700BBF6FA /* NSKButtonSwiftTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57C5C9C1D69C32800BBF6FA /* Build configuration list for PBXNativeTarget "NSKButtonSwiftTV" */;
+			buildPhases = (
+				B57C5C8C1D69C32700BBF6FA /* Sources */,
+				B57C5C8D1D69C32700BBF6FA /* Frameworks */,
+				B57C5C8E1D69C32700BBF6FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSKButtonSwiftTV;
+			productName = NSKButtonSwiftTV;
+			productReference = B57C5C901D69C32700BBF6FA /* NSKButtonSwiftTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B57C5C391D69C2B200BBF6FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = NSSimpleApps;
+				TargetAttributes = {
+					B57C5C401D69C2B200BBF6FA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					B57C5C8F1D69C32700BBF6FA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B57C5C3C1D69C2B200BBF6FA /* Build configuration list for PBXProject "NSKButtonSwift" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B57C5C381D69C2B200BBF6FA;
+			productRefGroup = B57C5C421D69C2B200BBF6FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B57C5C401D69C2B200BBF6FA /* NSKButtonSwift */,
+				B57C5C8F1D69C32700BBF6FA /* NSKButtonSwiftTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B57C5C3F1D69C2B200BBF6FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57C5C4F1D69C2B200BBF6FA /* LaunchScreen.storyboard in Resources */,
+				B57C5C4C1D69C2B200BBF6FA /* Assets.xcassets in Resources */,
+				B57C5C4A1D69C2B200BBF6FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57C5C8E1D69C32700BBF6FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57C5C9A1D69C32800BBF6FA /* Assets.xcassets in Resources */,
+				B57C5C981D69C32700BBF6FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B57C5C3D1D69C2B200BBF6FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50BB8C11D6E0B8A00335F15 /* NSKTopImageLayout.swift in Sources */,
+				B57C5C471D69C2B200BBF6FA /* ViewController.swift in Sources */,
+				B50BB8BE1D6E0B1C00335F15 /* NSKRightImageLayout.swift in Sources */,
+				B50BB8BB1D6E0AEC00335F15 /* NSKDefaultImageLayout.swift in Sources */,
+				B566748D1D6F43C6007F8850 /* DecodeTestViewController.swift in Sources */,
+				B50BB8C41D6E0B9A00335F15 /* NSKBottomImageLayout.swift in Sources */,
+				B57C5C451D69C2B200BBF6FA /* AppDelegate.swift in Sources */,
+				B57C5CC21D69C3CE00BBF6FA /* NSKButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57C5C8C1D69C32700BBF6FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50BB8C21D6E0B8A00335F15 /* NSKTopImageLayout.swift in Sources */,
+				B57C5C951D69C32700BBF6FA /* TVViewController.swift in Sources */,
+				B50BB8BF1D6E0B1C00335F15 /* NSKRightImageLayout.swift in Sources */,
+				B50BB8BC1D6E0AEC00335F15 /* NSKDefaultImageLayout.swift in Sources */,
+				B50BB8C51D6E0B9A00335F15 /* NSKBottomImageLayout.swift in Sources */,
+				B57C5C931D69C32700BBF6FA /* AppDelegate.swift in Sources */,
+				B57C5CC31D69C3CE00BBF6FA /* NSKButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B57C5C481D69C2B200BBF6FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57C5C491D69C2B200BBF6FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B57C5C4D1D69C2B200BBF6FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57C5C4E1D69C2B200BBF6FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B57C5C961D69C32700BBF6FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57C5C971D69C32700BBF6FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B57C5C511D69C2B200BBF6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B57C5C521D69C2B200BBF6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B57C5C541D69C2B200BBF6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NSKButtonSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NSSimpleApps.NSKButtonSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B57C5C551D69C2B200BBF6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NSKButtonSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NSSimpleApps.NSKButtonSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B57C5C9D1D69C32800BBF6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = NSKButtonSwiftTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NSSimpleApps.NSKButtonSwiftTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		B57C5C9E1D69C32800BBF6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = NSKButtonSwiftTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NSSimpleApps.NSKButtonSwiftTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B57C5C3C1D69C2B200BBF6FA /* Build configuration list for PBXProject "NSKButtonSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57C5C511D69C2B200BBF6FA /* Debug */,
+				B57C5C521D69C2B200BBF6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B57C5C531D69C2B200BBF6FA /* Build configuration list for PBXNativeTarget "NSKButtonSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57C5C541D69C2B200BBF6FA /* Debug */,
+				B57C5C551D69C2B200BBF6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B57C5C9C1D69C32800BBF6FA /* Build configuration list for PBXNativeTarget "NSKButtonSwiftTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57C5C9D1D69C32800BBF6FA /* Debug */,
+				B57C5C9E1D69C32800BBF6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B57C5C391D69C2B200BBF6FA /* Project object */;
+}

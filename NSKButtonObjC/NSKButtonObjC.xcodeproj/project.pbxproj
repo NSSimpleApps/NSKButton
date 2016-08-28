@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B50BB8B91D6DF7EE00335F15 /* DecodeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50BB8B81D6DF7EE00335F15 /* DecodeTestViewController.m */; };
+		B57C5C641D69C2CF00BBF6FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5C631D69C2CF00BBF6FA /* main.m */; };
+		B57C5C671D69C2CF00BBF6FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5C661D69C2CF00BBF6FA /* AppDelegate.m */; };
+		B57C5C6A1D69C2CF00BBF6FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5C691D69C2CF00BBF6FA /* ViewController.m */; };
+		B57C5C6D1D69C2CF00BBF6FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57C5C6B1D69C2CF00BBF6FA /* Main.storyboard */; };
+		B57C5C6F1D69C2CF00BBF6FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57C5C6E1D69C2CF00BBF6FA /* Assets.xcassets */; };
+		B57C5C721D69C2CF00BBF6FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57C5C701D69C2CF00BBF6FA /* LaunchScreen.storyboard */; };
+		B57C5CA71D69C33800BBF6FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5CA61D69C33800BBF6FA /* main.m */; };
+		B57C5CAA1D69C33800BBF6FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5CA91D69C33800BBF6FA /* AppDelegate.m */; };
+		B57C5CAD1D69C33800BBF6FA /* TVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5CAC1D69C33800BBF6FA /* TVViewController.m */; };
+		B57C5CB01D69C33800BBF6FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57C5CAE1D69C33800BBF6FA /* Main.storyboard */; };
+		B57C5CB21D69C33800BBF6FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57C5CB11D69C33800BBF6FA /* Assets.xcassets */; };
+		B57C5CBE1D69C3B600BBF6FA /* NSKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5CBD1D69C3B600BBF6FA /* NSKButton.m */; };
+		B57C5CBF1D69C3B600BBF6FA /* NSKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5CBD1D69C3B600BBF6FA /* NSKButton.m */; };
+		B57C5CFA1D69F04400BBF6FA /* NSKDefaultImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5CF91D69F04400BBF6FA /* NSKDefaultImageLayout.m */; };
+		B57C5CFB1D69F04400BBF6FA /* NSKDefaultImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5CF91D69F04400BBF6FA /* NSKDefaultImageLayout.m */; };
+		B57C5CFE1D69F25300BBF6FA /* NSKRightImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5CFD1D69F25300BBF6FA /* NSKRightImageLayout.m */; };
+		B57C5CFF1D69F25300BBF6FA /* NSKRightImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5CFD1D69F25300BBF6FA /* NSKRightImageLayout.m */; };
+		B57C5D021D69F26500BBF6FA /* NSKTopImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5D011D69F26500BBF6FA /* NSKTopImageLayout.m */; };
+		B57C5D031D69F26500BBF6FA /* NSKTopImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5D011D69F26500BBF6FA /* NSKTopImageLayout.m */; };
+		B57C5D061D69F27000BBF6FA /* NSKBottomImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5D051D69F27000BBF6FA /* NSKBottomImageLayout.m */; };
+		B57C5D071D69F27000BBF6FA /* NSKBottomImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5D051D69F27000BBF6FA /* NSKBottomImageLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B50BB8B71D6DF7EE00335F15 /* DecodeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecodeTestViewController.h; sourceTree = "<group>"; };
+		B50BB8B81D6DF7EE00335F15 /* DecodeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecodeTestViewController.m; sourceTree = "<group>"; };
+		B57C5C5F1D69C2CF00BBF6FA /* NSKButtonObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSKButtonObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57C5C631D69C2CF00BBF6FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B57C5C651D69C2CF00BBF6FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B57C5C661D69C2CF00BBF6FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B57C5C681D69C2CF00BBF6FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B57C5C691D69C2CF00BBF6FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B57C5C6C1D69C2CF00BBF6FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B57C5C6E1D69C2CF00BBF6FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B57C5C711D69C2CF00BBF6FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B57C5C731D69C2CF00BBF6FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57C5CA31D69C33800BBF6FA /* NSKButtonObjCTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSKButtonObjCTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57C5CA61D69C33800BBF6FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B57C5CA81D69C33800BBF6FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B57C5CA91D69C33800BBF6FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B57C5CAB1D69C33800BBF6FA /* TVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVViewController.h; sourceTree = "<group>"; };
+		B57C5CAC1D69C33800BBF6FA /* TVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVViewController.m; sourceTree = "<group>"; };
+		B57C5CAF1D69C33800BBF6FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B57C5CB11D69C33800BBF6FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B57C5CB31D69C33800BBF6FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57C5CBC1D69C3B600BBF6FA /* NSKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSKButton.h; sourceTree = "<group>"; };
+		B57C5CBD1D69C3B600BBF6FA /* NSKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKButton.m; sourceTree = "<group>"; };
+		B57C5CF81D69F04400BBF6FA /* NSKDefaultImageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSKDefaultImageLayout.h; sourceTree = "<group>"; };
+		B57C5CF91D69F04400BBF6FA /* NSKDefaultImageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKDefaultImageLayout.m; sourceTree = "<group>"; };
+		B57C5CFC1D69F25300BBF6FA /* NSKRightImageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSKRightImageLayout.h; sourceTree = "<group>"; };
+		B57C5CFD1D69F25300BBF6FA /* NSKRightImageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKRightImageLayout.m; sourceTree = "<group>"; };
+		B57C5D001D69F26500BBF6FA /* NSKTopImageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSKTopImageLayout.h; sourceTree = "<group>"; };
+		B57C5D011D69F26500BBF6FA /* NSKTopImageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKTopImageLayout.m; sourceTree = "<group>"; };
+		B57C5D041D69F27000BBF6FA /* NSKBottomImageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSKBottomImageLayout.h; sourceTree = "<group>"; };
+		B57C5D051D69F27000BBF6FA /* NSKBottomImageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKBottomImageLayout.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B57C5C5C1D69C2CF00BBF6FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57C5CA01D69C33800BBF6FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B57C5C561D69C2CF00BBF6FA = {
+			isa = PBXGroup;
+			children = (
+				B57C5CBB1D69C3A200BBF6FA /* ObjC */,
+				B57C5C611D69C2CF00BBF6FA /* NSKButtonObjC */,
+				B57C5CA41D69C33800BBF6FA /* NSKButtonObjCTV */,
+				B57C5C601D69C2CF00BBF6FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B57C5C601D69C2CF00BBF6FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B57C5C5F1D69C2CF00BBF6FA /* NSKButtonObjC.app */,
+				B57C5CA31D69C33800BBF6FA /* NSKButtonObjCTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B57C5C611D69C2CF00BBF6FA /* NSKButtonObjC */ = {
+			isa = PBXGroup;
+			children = (
+				B57C5C651D69C2CF00BBF6FA /* AppDelegate.h */,
+				B57C5C661D69C2CF00BBF6FA /* AppDelegate.m */,
+				B57C5C681D69C2CF00BBF6FA /* ViewController.h */,
+				B57C5C691D69C2CF00BBF6FA /* ViewController.m */,
+				B50BB8B71D6DF7EE00335F15 /* DecodeTestViewController.h */,
+				B50BB8B81D6DF7EE00335F15 /* DecodeTestViewController.m */,
+				B57C5C6B1D69C2CF00BBF6FA /* Main.storyboard */,
+				B57C5C6E1D69C2CF00BBF6FA /* Assets.xcassets */,
+				B57C5C701D69C2CF00BBF6FA /* LaunchScreen.storyboard */,
+				B57C5C731D69C2CF00BBF6FA /* Info.plist */,
+				B57C5C621D69C2CF00BBF6FA /* Supporting Files */,
+			);
+			path = NSKButtonObjC;
+			sourceTree = "<group>";
+		};
+		B57C5C621D69C2CF00BBF6FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B57C5C631D69C2CF00BBF6FA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B57C5CA41D69C33800BBF6FA /* NSKButtonObjCTV */ = {
+			isa = PBXGroup;
+			children = (
+				B57C5CA81D69C33800BBF6FA /* AppDelegate.h */,
+				B57C5CA91D69C33800BBF6FA /* AppDelegate.m */,
+				B57C5CAB1D69C33800BBF6FA /* TVViewController.h */,
+				B57C5CAC1D69C33800BBF6FA /* TVViewController.m */,
+				B57C5CAE1D69C33800BBF6FA /* Main.storyboard */,
+				B57C5CB11D69C33800BBF6FA /* Assets.xcassets */,
+				B57C5CB31D69C33800BBF6FA /* Info.plist */,
+				B57C5CA51D69C33800BBF6FA /* Supporting Files */,
+			);
+			path = NSKButtonObjCTV;
+			sourceTree = "<group>";
+		};
+		B57C5CA51D69C33800BBF6FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B57C5CA61D69C33800BBF6FA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B57C5CBB1D69C3A200BBF6FA /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				B57C5CBC1D69C3B600BBF6FA /* NSKButton.h */,
+				B57C5CBD1D69C3B600BBF6FA /* NSKButton.m */,
+				B57C5CF81D69F04400BBF6FA /* NSKDefaultImageLayout.h */,
+				B57C5CF91D69F04400BBF6FA /* NSKDefaultImageLayout.m */,
+				B57C5CFC1D69F25300BBF6FA /* NSKRightImageLayout.h */,
+				B57C5CFD1D69F25300BBF6FA /* NSKRightImageLayout.m */,
+				B57C5D001D69F26500BBF6FA /* NSKTopImageLayout.h */,
+				B57C5D011D69F26500BBF6FA /* NSKTopImageLayout.m */,
+				B57C5D041D69F27000BBF6FA /* NSKBottomImageLayout.h */,
+				B57C5D051D69F27000BBF6FA /* NSKBottomImageLayout.m */,
+			);
+			name = ObjC;
+			path = ../Source/ObjC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B57C5C5E1D69C2CF00BBF6FA /* NSKButtonObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57C5C761D69C2CF00BBF6FA /* Build configuration list for PBXNativeTarget "NSKButtonObjC" */;
+			buildPhases = (
+				B57C5C5B1D69C2CF00BBF6FA /* Sources */,
+				B57C5C5C1D69C2CF00BBF6FA /* Frameworks */,
+				B57C5C5D1D69C2CF00BBF6FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSKButtonObjC;
+			productName = NSKButtonObjC;
+			productReference = B57C5C5F1D69C2CF00BBF6FA /* NSKButtonObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B57C5CA21D69C33800BBF6FA /* NSKButtonObjCTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57C5CB61D69C33800BBF6FA /* Build configuration list for PBXNativeTarget "NSKButtonObjCTV" */;
+			buildPhases = (
+				B57C5C9F1D69C33800BBF6FA /* Sources */,
+				B57C5CA01D69C33800BBF6FA /* Frameworks */,
+				B57C5CA11D69C33800BBF6FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSKButtonObjCTV;
+			productName = NSKButtonObjCTV;
+			productReference = B57C5CA31D69C33800BBF6FA /* NSKButtonObjCTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B57C5C571D69C2CF00BBF6FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = NSSimpleApps;
+				TargetAttributes = {
+					B57C5C5E1D69C2CF00BBF6FA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					B57C5CA21D69C33800BBF6FA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B57C5C5A1D69C2CF00BBF6FA /* Build configuration list for PBXProject "NSKButtonObjC" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B57C5C561D69C2CF00BBF6FA;
+			productRefGroup = B57C5C601D69C2CF00BBF6FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B57C5C5E1D69C2CF00BBF6FA /* NSKButtonObjC */,
+				B57C5CA21D69C33800BBF6FA /* NSKButtonObjCTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B57C5C5D1D69C2CF00BBF6FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57C5C721D69C2CF00BBF6FA /* LaunchScreen.storyboard in Resources */,
+				B57C5C6F1D69C2CF00BBF6FA /* Assets.xcassets in Resources */,
+				B57C5C6D1D69C2CF00BBF6FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57C5CA11D69C33800BBF6FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57C5CB21D69C33800BBF6FA /* Assets.xcassets in Resources */,
+				B57C5CB01D69C33800BBF6FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B57C5C5B1D69C2CF00BBF6FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57C5C6A1D69C2CF00BBF6FA /* ViewController.m in Sources */,
+				B57C5C671D69C2CF00BBF6FA /* AppDelegate.m in Sources */,
+				B57C5CBE1D69C3B600BBF6FA /* NSKButton.m in Sources */,
+				B57C5D061D69F27000BBF6FA /* NSKBottomImageLayout.m in Sources */,
+				B57C5CFE1D69F25300BBF6FA /* NSKRightImageLayout.m in Sources */,
+				B50BB8B91D6DF7EE00335F15 /* DecodeTestViewController.m in Sources */,
+				B57C5D021D69F26500BBF6FA /* NSKTopImageLayout.m in Sources */,
+				B57C5C641D69C2CF00BBF6FA /* main.m in Sources */,
+				B57C5CFA1D69F04400BBF6FA /* NSKDefaultImageLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57C5C9F1D69C33800BBF6FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57C5CAD1D69C33800BBF6FA /* TVViewController.m in Sources */,
+				B57C5CAA1D69C33800BBF6FA /* AppDelegate.m in Sources */,
+				B57C5CBF1D69C3B600BBF6FA /* NSKButton.m in Sources */,
+				B57C5D071D69F27000BBF6FA /* NSKBottomImageLayout.m in Sources */,
+				B57C5CFF1D69F25300BBF6FA /* NSKRightImageLayout.m in Sources */,
+				B57C5D031D69F26500BBF6FA /* NSKTopImageLayout.m in Sources */,
+				B57C5CA71D69C33800BBF6FA /* main.m in Sources */,
+				B57C5CFB1D69F04400BBF6FA /* NSKDefaultImageLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B57C5C6B1D69C2CF00BBF6FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57C5C6C1D69C2CF00BBF6FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B57C5C701D69C2CF00BBF6FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57C5C711D69C2CF00BBF6FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B57C5CAE1D69C33800BBF6FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57C5CAF1D69C33800BBF6FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B57C5C741D69C2CF00BBF6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B57C5C751D69C2CF00BBF6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B57C5C771D69C2CF00BBF6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NSKButtonObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NSSimpleApps.NSKButtonObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B57C5C781D69C2CF00BBF6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NSKButtonObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NSSimpleApps.NSKButtonObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B57C5CB41D69C33800BBF6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = NSKButtonObjCTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NSSimpleApps.NSKButtonObjCTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		B57C5CB51D69C33800BBF6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = NSKButtonObjCTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NSSimpleApps.NSKButtonObjCTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B57C5C5A1D69C2CF00BBF6FA /* Build configuration list for PBXProject "NSKButtonObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57C5C741D69C2CF00BBF6FA /* Debug */,
+				B57C5C751D69C2CF00BBF6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B57C5C761D69C2CF00BBF6FA /* Build configuration list for PBXNativeTarget "NSKButtonObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57C5C771D69C2CF00BBF6FA /* Debug */,
+				B57C5C781D69C2CF00BBF6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B57C5CB61D69C33800BBF6FA /* Build configuration list for PBXNativeTarget "NSKButtonObjCTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57C5CB41D69C33800BBF6FA /* Debug */,
+				B57C5CB51D69C33800BBF6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B57C5C571D69C2CF00BBF6FA /* Project object */;
+}

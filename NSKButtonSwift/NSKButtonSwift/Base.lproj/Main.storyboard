@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UhX-Fq-vEb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--NSKButton-->
+        <scene sceneID="7SA-7u-Dfn">
+            <objects>
+                <viewController id="fOt-3H-QZa" customClass="ViewController" customModule="NSKButtonSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="24V-KB-bCq"/>
+                        <viewControllerLayoutGuide type="bottom" id="CJx-tI-9DH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bkG-OD-ROq">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jr-59-ZgA" customClass="NSKButton" customModule="NSKButtonSwift" customModuleProvider="target">
+                                <rect key="frame" x="265" y="258" width="70" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Default" image="image">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="nskImagePosition">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeImagePosition:" destination="fOt-3H-QZa" eventType="touchUpInside" id="evc-6a-bIg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0jr-59-ZgA" firstAttribute="centerX" secondItem="bkG-OD-ROq" secondAttribute="centerX" id="cVp-DV-IRq"/>
+                            <constraint firstItem="0jr-59-ZgA" firstAttribute="centerY" secondItem="bkG-OD-ROq" secondAttribute="centerY" id="nD0-6d-Wlm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="NSKButton" id="Mfm-if-AdN">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="BOE-yM-tqZ">
+                            <connections>
+                                <segue destination="AhU-i5-Nmw" kind="show" identifier="ShowDecodeTestSegue" id="C4b-RW-hqq">
+                                    <nil key="action"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nskButton" destination="0jr-59-ZgA" id="ieu-Vz-Dvr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RQo-fA-Sxc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="389"/>
+        </scene>
+        <!--Decode Test View Controller-->
+        <scene sceneID="SDA-z6-IDt">
+            <objects>
+                <viewController id="AhU-i5-Nmw" customClass="DecodeTestViewController" customModule="NSKButtonSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LrK-a8-prs"/>
+                        <viewControllerLayoutGuide type="bottom" id="1YN-iZ-zLf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gOq-83-FDU">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="diC-Wv-4qb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="390"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IFX-jq-DWS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UhX-Fq-vEb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="dQP-Mj-WTd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fOt-3H-QZa" kind="relationship" relationship="rootViewController" id="5Tj-Yx-TQb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2c-FC-4m0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="389"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:NSKButton.gif">
+   </FileRef>
+   <FileRef
+      location = "group:CHANGELOG.md">
+   </FileRef>
+   <FileRef
+      location = "group:LICENSE">
+   </FileRef>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/neo/Documents/NSKButton/NSKButton.podspec">
+   </FileRef>
+   <FileRef
+      location = "group:NSKButtonObjC/NSKButtonObjC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSKButtonSwift/NSKButtonSwift.xcodeproj">
+   </FileRef>
+</Workspace>
