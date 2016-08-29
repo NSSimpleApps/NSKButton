@@ -6,8 +6,8 @@
 //  Copyright © 2016 NSSimpleApps. All rights reserved.
 //
 
-#import "NSKDefaultImageLayout.h"
+#import "NSKVerticalImageLayout.h"
 
-@interface NSKBottomImageLayout : NSKDefaultImageLayout
+@interface NSKBottomImageLayout : NSKVerticalImageLayout
 
 @end

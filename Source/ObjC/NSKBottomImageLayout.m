@@ -46,14 +46,4 @@
     }
 }
 
-+ (CGSize)intrinsicContentSizeForDefault:(CGSize)defaultIntrinsicContentSize
-                               imageRect:(CGRect)imageRect
-                               titleRect:(CGRect)titleRect {
-    
-    CGSize intrinsicContentSize = defaultIntrinsicContentSize;
-    intrinsicContentSize.height += MIN(imageRect.size.height, titleRect.size.height);
-    
-    return intrinsicContentSize;
-}
-
 @end

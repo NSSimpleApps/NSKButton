@@ -9,7 +9,7 @@
 import UIKit
 
 @objc(NSKTopImageLayout)
-internal class NSKTopImageLayout: NSKDefaultImageLayout {
+internal class NSKTopImageLayout: NSKVerticalImageLayout {
     
     override class func titleRect(for contentRect: CGRect,
                                       defaultTitleRect: CGRect,
@@ -51,17 +51,5 @@ internal class NSKTopImageLayout: NSKDefaultImageLayout {
                                    titleRect: titleRect,
                                    imageEdgeInsets: imageEdgeInsets)
         }
-    }
-    
-    override class func intrinsicContentSize(for defaultIntrinsicContentSize: CGSize,
-                                                 imageRect: CGRect,
-                                                 titleRect: CGRect) -> CGSize {
-        
-        let height = min(imageRect.height, titleRect.height)
-        
-        var intrinsicContentSize = defaultIntrinsicContentSize
-        intrinsicContentSize.height += height
-        
-        return intrinsicContentSize
     }
 }

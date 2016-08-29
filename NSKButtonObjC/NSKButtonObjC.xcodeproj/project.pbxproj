@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B50BB8B91D6DF7EE00335F15 /* DecodeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50BB8B81D6DF7EE00335F15 /* DecodeTestViewController.m */; };
+		B532534C1D746A0A002D52EC /* NSKVerticalImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B532534B1D746A0A002D52EC /* NSKVerticalImageLayout.m */; };
+		B532534D1D746A0A002D52EC /* NSKVerticalImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B532534B1D746A0A002D52EC /* NSKVerticalImageLayout.m */; };
 		B57C5C641D69C2CF00BBF6FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5C631D69C2CF00BBF6FA /* main.m */; };
 		B57C5C671D69C2CF00BBF6FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5C661D69C2CF00BBF6FA /* AppDelegate.m */; };
 		B57C5C6A1D69C2CF00BBF6FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C5C691D69C2CF00BBF6FA /* ViewController.m */; };
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		B50BB8B71D6DF7EE00335F15 /* DecodeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecodeTestViewController.h; sourceTree = "<group>"; };
 		B50BB8B81D6DF7EE00335F15 /* DecodeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecodeTestViewController.m; sourceTree = "<group>"; };
+		B532534A1D746A0A002D52EC /* NSKVerticalImageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSKVerticalImageLayout.h; sourceTree = "<group>"; };
+		B532534B1D746A0A002D52EC /* NSKVerticalImageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKVerticalImageLayout.m; sourceTree = "<group>"; };
 		B57C5C5F1D69C2CF00BBF6FA /* NSKButtonObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSKButtonObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57C5C631D69C2CF00BBF6FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B57C5C651D69C2CF00BBF6FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				B57C5CBD1D69C3B600BBF6FA /* NSKButton.m */,
 				B57C5CF81D69F04400BBF6FA /* NSKDefaultImageLayout.h */,
 				B57C5CF91D69F04400BBF6FA /* NSKDefaultImageLayout.m */,
+				B532534A1D746A0A002D52EC /* NSKVerticalImageLayout.h */,
+				B532534B1D746A0A002D52EC /* NSKVerticalImageLayout.m */,
 				B57C5CFC1D69F25300BBF6FA /* NSKRightImageLayout.h */,
 				B57C5CFD1D69F25300BBF6FA /* NSKRightImageLayout.m */,
 				B57C5D001D69F26500BBF6FA /* NSKTopImageLayout.h */,
@@ -277,6 +283,7 @@
 				B50BB8B91D6DF7EE00335F15 /* DecodeTestViewController.m in Sources */,
 				B57C5D021D69F26500BBF6FA /* NSKTopImageLayout.m in Sources */,
 				B57C5C641D69C2CF00BBF6FA /* main.m in Sources */,
+				B532534C1D746A0A002D52EC /* NSKVerticalImageLayout.m in Sources */,
 				B57C5CFA1D69F04400BBF6FA /* NSKDefaultImageLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +294,7 @@
 			files = (
 				B57C5CAD1D69C33800BBF6FA /* TVViewController.m in Sources */,
 				B57C5CAA1D69C33800BBF6FA /* AppDelegate.m in Sources */,
+				B532534D1D746A0A002D52EC /* NSKVerticalImageLayout.m in Sources */,
 				B57C5CBF1D69C3B600BBF6FA /* NSKButton.m in Sources */,
 				B57C5D071D69F27000BBF6FA /* NSKBottomImageLayout.m in Sources */,
 				B57C5CFF1D69F25300BBF6FA /* NSKRightImageLayout.m in Sources */,

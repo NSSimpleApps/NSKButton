@@ -15,6 +15,8 @@
 		B50BB8C21D6E0B8A00335F15 /* NSKTopImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB8C01D6E0B8A00335F15 /* NSKTopImageLayout.swift */; };
 		B50BB8C41D6E0B9A00335F15 /* NSKBottomImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB8C31D6E0B9A00335F15 /* NSKBottomImageLayout.swift */; };
 		B50BB8C51D6E0B9A00335F15 /* NSKBottomImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB8C31D6E0B9A00335F15 /* NSKBottomImageLayout.swift */; };
+		B532534F1D746AF3002D52EC /* NSKVerticalImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532534E1D746AF3002D52EC /* NSKVerticalImageLayout.swift */; };
+		B53253501D746AF3002D52EC /* NSKVerticalImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532534E1D746AF3002D52EC /* NSKVerticalImageLayout.swift */; };
 		B566748D1D6F43C6007F8850 /* DecodeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B566748C1D6F43C6007F8850 /* DecodeTestViewController.swift */; };
 		B57C5C451D69C2B200BBF6FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C5C441D69C2B200BBF6FA /* AppDelegate.swift */; };
 		B57C5C471D69C2B200BBF6FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C5C461D69C2B200BBF6FA /* ViewController.swift */; };
@@ -34,6 +36,7 @@
 		B50BB8BD1D6E0B1C00335F15 /* NSKRightImageLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSKRightImageLayout.swift; sourceTree = "<group>"; };
 		B50BB8C01D6E0B8A00335F15 /* NSKTopImageLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSKTopImageLayout.swift; sourceTree = "<group>"; };
 		B50BB8C31D6E0B9A00335F15 /* NSKBottomImageLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSKBottomImageLayout.swift; sourceTree = "<group>"; };
+		B532534E1D746AF3002D52EC /* NSKVerticalImageLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSKVerticalImageLayout.swift; sourceTree = "<group>"; };
 		B566748C1D6F43C6007F8850 /* DecodeTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeTestViewController.swift; sourceTree = "<group>"; };
 		B57C5C411D69C2B200BBF6FA /* NSKButtonSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSKButtonSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57C5C441D69C2B200BBF6FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +122,7 @@
 			children = (
 				B57C5CC11D69C3CE00BBF6FA /* NSKButton.swift */,
 				B50BB8BA1D6E0AEC00335F15 /* NSKDefaultImageLayout.swift */,
+				B532534E1D746AF3002D52EC /* NSKVerticalImageLayout.swift */,
 				B50BB8BD1D6E0B1C00335F15 /* NSKRightImageLayout.swift */,
 				B50BB8C01D6E0B8A00335F15 /* NSKTopImageLayout.swift */,
 				B50BB8C31D6E0B9A00335F15 /* NSKBottomImageLayout.swift */,
@@ -235,6 +239,7 @@
 				B566748D1D6F43C6007F8850 /* DecodeTestViewController.swift in Sources */,
 				B50BB8C41D6E0B9A00335F15 /* NSKBottomImageLayout.swift in Sources */,
 				B57C5C451D69C2B200BBF6FA /* AppDelegate.swift in Sources */,
+				B532534F1D746AF3002D52EC /* NSKVerticalImageLayout.swift in Sources */,
 				B57C5CC21D69C3CE00BBF6FA /* NSKButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +254,7 @@
 				B50BB8BC1D6E0AEC00335F15 /* NSKDefaultImageLayout.swift in Sources */,
 				B50BB8C51D6E0B9A00335F15 /* NSKBottomImageLayout.swift in Sources */,
 				B57C5C931D69C32700BBF6FA /* AppDelegate.swift in Sources */,
+				B53253501D746AF3002D52EC /* NSKVerticalImageLayout.swift in Sources */,
 				B57C5CC31D69C3CE00BBF6FA /* NSKButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

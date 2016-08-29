@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NSKButton"
-    s.version      = "0.1"
+    s.version      = "0.2"
     s.summary      = "NSKButton is a subclass of UIButton that implements image positioning like NSButton in OSX."
     s.description  = "NSKButton is a subclass of UIButton that implements image positioning like NSButton in OSX. Changing `imagePosition` automatically invalidates the button layout. See the README."
     s.homepage     = "https://github.com/NSSimpleApps/NSKButton"
