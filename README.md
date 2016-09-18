@@ -9,7 +9,8 @@ Installation guide: place this into `Podfile`
 # use_frameworks!
 
 target 'Target' do
-    pod 'NSKButton'
+    pod 'NSKButton/ObjC' # objc project
+    pod 'NSKButton/Swift' # swift project
 end
 ```
 

@@ -142,11 +142,11 @@ static NSString *const NSKImageLayoutKey = @"nskImageLayout";
         
         if (decodedInteger >= 0 && decodedInteger <= 3) {
             
-            self.nskImagePosition = decodedInteger;
+            _nskImagePosition = decodedInteger;
             
         } else {
             
-            self.nskImagePosition = NSKImagePositionDefault;
+            _nskImagePosition = NSKImagePositionDefault;
         }
     }
     

@@ -10,7 +10,7 @@ import UIKit
 
 class DecodeTestViewController: UIViewController {
     
-    var data: NSData!
+    var data: Data!
     
     override func viewDidLoad() {
         
@@ -18,16 +18,16 @@ class DecodeTestViewController: UIViewController {
 
         self.title = "Decode NSKButton"
         
-        if let button = NSKeyedUnarchiver.unarchiveObjectWithData(self.data) as? NSKButton {
+        if let button = NSKeyedUnarchiver.unarchiveObject(with: self.data) as? NSKButton {
             
             button.center = self.view.center
             
             self.view.addSubview(button)
             
-            let horizontalConstraint = button.centerXAnchor.constraintEqualToAnchor(self.view.centerXAnchor)
-            let vertivalConstraint = button.centerYAnchor.constraintEqualToAnchor(self.view.centerYAnchor)
+            let horizontalConstraint = button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+            let vertivalConstraint = button.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
             
-            NSLayoutConstraint.activateConstraints([horizontalConstraint, vertivalConstraint])
+            NSLayoutConstraint.activate([horizontalConstraint, vertivalConstraint])
         }
     }
 }

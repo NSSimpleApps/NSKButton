@@ -31,16 +31,19 @@ CGRect CGRectMovingByX(CGFloat x, CGRect rect) {
                         imageRect:(CGRect)imageRect
                   titleEdgeInsets:(UIEdgeInsets)titleEdgeInsets {
     
-    if (!CGRectIsEmpty(defaultTitleRect)) {
+    if (CGRectIsEmpty(defaultTitleRect)) {
+        
+        return [super titleRectForContentRect:contentRect
+                             defaultTitleRect:defaultTitleRect
+                                    imageRect:imageRect
+                              titleEdgeInsets:titleEdgeInsets];
+        
+    } else {
         
         CGRect shiftedTitleRect =
         CGRectMovingByX(-(titleEdgeInsets.left - titleEdgeInsets.right), defaultTitleRect);
         
         return CGRectFlippingChildRect(shiftedTitleRect, contentRect);
-        
-    } else {
-        
-        return defaultTitleRect;
     }
 }
 
@@ -49,17 +52,20 @@ CGRect CGRectMovingByX(CGFloat x, CGRect rect) {
                         titleRect:(CGRect)titleRect
                   imageEdgeInsets:(UIEdgeInsets)imageEdgeInsets {
     
-    if (!CGRectIsEmpty(defaultImageRect)) {
+    if (CGRectIsEmpty(defaultImageRect)) {
+        
+        return [super imageRectForContentRect:contentRect
+                             defaultImageRect:defaultImageRect
+                                    titleRect:titleRect
+                              imageEdgeInsets:imageEdgeInsets];
+        
+    } else {
         
         CGRect shiftedImageRect = CGRectMovingByX(-imageEdgeInsets.left, defaultImageRect);
         
         CGRect flippedImageRect = CGRectFlippingChildRect(shiftedImageRect, contentRect);
         
         return CGRectMovingByX(imageEdgeInsets.left, flippedImageRect);
-        
-    } else {
-        
-        return defaultImageRect;
     }
 }
 
