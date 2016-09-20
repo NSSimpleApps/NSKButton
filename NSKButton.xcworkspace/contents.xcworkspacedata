@@ -14,7 +14,7 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
-      location = "group:/Users/neo/Documents/NSKButton/NSKButton.podspec">
+      location = "group:NSKButton.podspec">
    </FileRef>
    <FileRef
       location = "group:NSKButtonObjC/NSKButtonObjC.xcodeproj">
