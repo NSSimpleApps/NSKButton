@@ -11,7 +11,7 @@ import UIKit
 @objc(NSKBottomImageLayout)
 internal class NSKBottomImageLayout: NSKVerticalImageLayout {
     
-    override class func titleRect(forContentRect contentRect: CGRect,
+    override static func titleRect(forContentRect contentRect: CGRect,
                                   defaultTitleRect: CGRect,
                                   imageRect: CGRect,
                                   titleEdgeInsets: UIEdgeInsets) -> CGRect {
@@ -32,7 +32,7 @@ internal class NSKBottomImageLayout: NSKVerticalImageLayout {
         }
     }
     
-    override class func imageRect(forContentRect contentRect: CGRect,
+    override static func imageRect(forContentRect contentRect: CGRect,
                                   defaultImageRect: CGRect,
                                   titleRect: CGRect,
                                   imageEdgeInsets: UIEdgeInsets) -> CGRect {

@@ -37,22 +37,7 @@ static NSString *const NSKImageLayoutKey = @"nskImageLayout";
     
     if ((nskImagePosition >= 0) && (nskImagePosition <= 3) && (_nskImagePosition != nskImagePosition)) {
         
-        if (nskImagePosition == NSKImagePositionDefault) {
-            
-            self.nskImageLayout = [NSKDefaultImageLayout class];
-            
-        } else if (nskImagePosition == NSKImagePositionRight) {
-            
-            self.nskImageLayout = [NSKRightImageLayout class];
-            
-        } else if (nskImagePosition == NSKImagePositionTop) {
-            
-            self.nskImageLayout = [NSKTopImageLayout class];
-            
-        } else if (nskImagePosition == NSKImagePositionBottom) {
-            
-            self.nskImageLayout = [NSKBottomImageLayout class];
-        }
+        [self invalidateNskImageLayoutWithImagePosition:nskImagePosition];
         
         if ((ABS(_nskImagePosition - nskImagePosition) >= 2) ||
             ((_nskImagePosition == NSKImagePositionRight) && (nskImagePosition == NSKImagePositionTop)) ||
@@ -60,10 +45,10 @@ static NSString *const NSKImageLayoutKey = @"nskImageLayout";
             
             [self invalidateIntrinsicContentSize];
         }
-            
-        [self setNeedsLayout];
         
         _nskImagePosition = nskImagePosition;
+        
+        [self setNeedsLayout];
     }
 }
 
@@ -151,6 +136,38 @@ static NSString *const NSKImageLayoutKey = @"nskImageLayout";
     }
     
     return self;
+}
+
+- (void)setNskImagePosition:(NSKImagePosition)imagePosition autoInvalidate:(BOOL)autoInvalidate {
+    
+    if (autoInvalidate) {
+        
+        self.nskImagePosition = imagePosition;
+        
+    } else {
+        
+        _nskImagePosition = imagePosition;
+        [self invalidateNskImageLayoutWithImagePosition:imagePosition];
+    }
+}
+
+- (void)invalidateNskImageLayoutWithImagePosition:(NSKImagePosition)imagePosition {
+    
+    switch (imagePosition) {
+            
+        case NSKImagePositionDefault:
+            self.nskImageLayout = [NSKDefaultImageLayout class];
+            break;
+        case NSKImagePositionRight:
+            self.nskImageLayout = [NSKRightImageLayout class];
+            break;
+        case NSKImagePositionTop:
+            self.nskImageLayout = [NSKTopImageLayout class];
+            break;
+        case NSKImagePositionBottom:
+            self.nskImageLayout = [NSKBottomImageLayout class];
+            break;
+    }
 }
 
 @end

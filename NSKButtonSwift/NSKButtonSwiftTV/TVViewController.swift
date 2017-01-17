@@ -35,7 +35,7 @@ class TVViewController: UIViewController {
             
             let rawValue = sender.nskImagePosition.rawValue
             
-            sender.nskImagePosition = NSKButtonImagePosition(rawValue: rawValue + 1)!
+            sender.nskImagePosition = NSKImagePosition(rawValue: rawValue + 1)!
         }
         
         sender.setTitle(self.buttonTitles[sender.nskImagePosition.rawValue], forState: .Normal)

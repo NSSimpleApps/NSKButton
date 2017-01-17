@@ -25,4 +25,6 @@ typedef NS_ENUM(NSInteger, NSKImagePosition) {
 @property (nonatomic, assign) NSKImagePosition nskImagePosition;
 #endif
 
+- (void)setNskImagePosition:(NSKImagePosition)imagePosition autoInvalidate:(BOOL)autoInvalidate;
+
 @end

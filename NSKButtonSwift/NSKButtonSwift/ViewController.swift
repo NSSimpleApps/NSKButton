@@ -20,15 +20,15 @@ class ViewController: UIViewController {
         
         let toolBarButton1 = NSKButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         toolBarButton1.nskImagePosition = .top
-        toolBarButton1.setTitle("Title1", for: UIControlState())
-        toolBarButton1.setImage(UIImage(named: "image"), for: UIControlState())
-        toolBarButton1.setTitleColor(UIColor(red: 0, green: CGFloat(122)/255, blue: 1, alpha: 1), for: UIControlState())
+        toolBarButton1.setTitle("Title1", for: .normal)
+        toolBarButton1.setImage(UIImage(named: "image"), for: .normal)
+        toolBarButton1.setTitleColor(UIColor(red: 0, green: CGFloat(122)/255, blue: 1, alpha: 1), for: .normal)
         
         let toolBarButton2 = NSKButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         toolBarButton2.nskImagePosition = .top
-        toolBarButton2.setTitle("Title2", for: UIControlState())
-        toolBarButton2.setImage(UIImage(named: "image"), for: UIControlState())
-        toolBarButton2.setTitleColor(UIColor(red: 0, green: CGFloat(122)/255, blue: 1, alpha: 1), for: UIControlState())
+        toolBarButton2.setTitle("Title2", for: .normal)
+        toolBarButton2.setImage(UIImage(named: "image"), for: .normal)
+        toolBarButton2.setTitleColor(UIColor(red: 0, green: CGFloat(122)/255, blue: 1, alpha: 1), for: .normal)
         
         let buttonItem1 = UIBarButtonItem(customView: toolBarButton1)
         buttonItem1.width = 80
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         self.nskButton.layer.borderColor =
             UIColor(red: 0, green: CGFloat(122)/255, blue: 1, alpha: 1).cgColor
         self.nskButton.layer.borderWidth = 1
-        self.nskButton.setTitle(self.buttonTitles.first, for: UIControlState())
+        self.nskButton.setTitle(self.buttonTitles.first, for: .normal)
     }
     
     @IBAction func changeImagePosition(_ sender: NSKButton) {
@@ -57,10 +57,10 @@ class ViewController: UIViewController {
             
             let rawValue = sender.nskImagePosition.rawValue
             
-            sender.nskImagePosition = NSKButtonImagePosition(rawValue: rawValue + 1)!
+            sender.nskImagePosition = NSKImagePosition(rawValue: rawValue + 1)!
         }
     
-        sender.setTitle(self.buttonTitles[sender.nskImagePosition.rawValue], for: UIControlState())
+        sender.setTitle(self.buttonTitles[sender.nskImagePosition.rawValue], for: .normal)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)  {

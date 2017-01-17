@@ -8,7 +8,7 @@
 
 import UIKit
 
-private func CGRectFlippingChildRect(_ childRect: CGRect, in parentRect: CGRect) -> CGRect {
+private func CGRectFlipping(childRect: CGRect, in parentRect: CGRect) -> CGRect {
     
     var newRect = childRect
     newRect.origin.x = 2 * parentRect.midX - childRect.maxX
@@ -16,7 +16,7 @@ private func CGRectFlippingChildRect(_ childRect: CGRect, in parentRect: CGRect)
     return newRect
 }
 
-private func CGRectMovingByX(_ rect: CGRect, x: CGFloat) -> CGRect {
+private func CGRect(rect: CGRect, movingBy x: CGFloat) -> CGRect {
     
     var newRect = rect
     newRect.origin.x += x
@@ -27,7 +27,7 @@ private func CGRectMovingByX(_ rect: CGRect, x: CGFloat) -> CGRect {
 @objc(NSKRightImageLayout)
 internal class NSKRightImageLayout: NSKDefaultImageLayout {
     
-    override class func titleRect(forContentRect contentRect: CGRect,
+    override static func titleRect(forContentRect contentRect: CGRect,
                                   defaultTitleRect: CGRect,
                                   imageRect: CGRect,
                                   titleEdgeInsets: UIEdgeInsets) -> CGRect {
@@ -42,14 +42,13 @@ internal class NSKRightImageLayout: NSKDefaultImageLayout {
         } else {
             
             let shiftedTitleRect =
-                CGRectMovingByX(defaultTitleRect,
-                                x: -(titleEdgeInsets.left - titleEdgeInsets.right))
+                CGRect(rect: defaultTitleRect, movingBy: -(titleEdgeInsets.left - titleEdgeInsets.right))
             
-            return CGRectFlippingChildRect(shiftedTitleRect, in: contentRect)
+            return CGRectFlipping(childRect: shiftedTitleRect, in: contentRect)
         }
     }
     
-    override class func imageRect(forContentRect contentRect: CGRect,
+    override static func imageRect(forContentRect contentRect: CGRect,
                                   defaultImageRect: CGRect,
                                   titleRect: CGRect,
                                   imageEdgeInsets: UIEdgeInsets) -> CGRect {
@@ -63,11 +62,11 @@ internal class NSKRightImageLayout: NSKDefaultImageLayout {
             
         } else {
             
-            let shiftedImageRect = CGRectMovingByX(defaultImageRect, x: -imageEdgeInsets.left)
+            let shiftedImageRect = CGRect(rect: defaultImageRect, movingBy: -imageEdgeInsets.left)
             
-            let flippedImageRect = CGRectFlippingChildRect(shiftedImageRect, in: contentRect)
+            let flippedImageRect = CGRectFlipping(childRect: shiftedImageRect, in: contentRect)
             
-            return CGRectMovingByX(flippedImageRect, x: imageEdgeInsets.left)
+            return CGRect(rect: flippedImageRect, movingBy: imageEdgeInsets.left)
         }
     }
 }

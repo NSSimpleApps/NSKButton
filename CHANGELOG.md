@@ -1,3 +1,8 @@
+## 0.4 (2017-01-17)
+
+- added `- (void)setNskImagePosition:(NSKImagePosition)imagePosition autoInvalidate:(BOOL)autoInvalidate`
+- internal improvements
+
 ## 0.3 (2016-09-18)
 
 - Bump to Swift 3

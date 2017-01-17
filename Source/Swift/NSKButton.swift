@@ -12,7 +12,7 @@ private let NSKImagePositionKey = #keyPath(NSKButton.nskImagePosition)
 private let NSKImageLayoutKey = "nskImageLayout"
 
 
-@objc public enum NSKButtonImagePosition: Int {
+@objc public enum NSKImagePosition: Int {
     
     case `default` = 0 // image on the left of title
     case right     = 1 // image on the right of title
@@ -27,54 +27,54 @@ open class NSKButton: UIButton {
         super.init(frame: frame)
     }
     
-    fileprivate var nskImageLayout = NSKDefaultImageLayout.self
-        
+    private var nskImageLayout = NSKDefaultImageLayout.self
+    
+    
     #if TARGET_INTERFACE_BUILDER
+    private var _nskImagePosition: Int = 0
+    @IBInspectable open var nskImagePosition: Int {
     
-    @IBInspectable public var nskImagePosition: Int = 0 {
+        get { return self._nskImagePosition }
     
-        didSet {
+        set {
     
-            if (0...3 ~= self.nskImagePosition) && (oldValue != self.nskImagePosition) {
+            if (0...3 ~= newValue) && (newValue != self._nskImagePosition) {
     
-                let oldValue = NSKButtonImagePosition(rawValue: oldValue)!
-                let newValue = NSKButtonImagePosition(rawValue: self.nskImagePosition)!
+                let oldValue = NSKImagePosition(rawValue: self._nskImagePosition)!
     
-                self.invalidateImagePosition(with: oldValue, newValue: newValue)
+                self._nskImagePosition = newValue
+    
+                self.invalidateImagePosition(with: oldValue, newValue: NSKImagePosition(rawValue: newValue)!)
             }
         }
     }
+    
     #else
-    open var nskImagePosition: NSKButtonImagePosition = .default {
+    
+    private var _nskImagePosition: NSKImagePosition = .default
+    open var nskImagePosition: NSKImagePosition {
+        
+        get { return self._nskImagePosition }
+        
+        set {
             
-        didSet {
-            
-            if oldValue != self.nskImagePosition {
-                    
+            if newValue != self._nskImagePosition {
+                
+                let oldValue = self._nskImagePosition
+                
+                self._nskImagePosition = newValue
+                
                 self.invalidateImagePosition(oldValue: oldValue,
-                                             newValue: self.nskImagePosition)
+                                             newValue: newValue)
             }
         }
     }
     #endif
     
-    fileprivate func invalidateImagePosition(oldValue: NSKButtonImagePosition,
-                                             newValue: NSKButtonImagePosition) {
+    private func invalidateImagePosition(oldValue: NSKImagePosition,
+                                             newValue: NSKImagePosition) {
         
-        switch newValue {
-            
-        case .default:
-            self.nskImageLayout = NSKDefaultImageLayout.self
-            
-        case .right:
-            self.nskImageLayout = NSKRightImageLayout.self
-            
-        case .top:
-            self.nskImageLayout = NSKTopImageLayout.self
-            
-        case .bottom:
-            self.nskImageLayout = NSKBottomImageLayout.self
-        }
+        self.invalidateNskImageLayout(with: newValue)
         
         if (abs(oldValue.rawValue - newValue.rawValue) >= 2) ||
             ((oldValue == .right) && (newValue == .top)) ||
@@ -133,7 +133,7 @@ open class NSKButton: UIButton {
         super.init(coder: aDecoder)
         
         let rawValue = aDecoder.decodeInteger(forKey: NSKImagePositionKey)
-        self.nskImagePosition = NSKButtonImagePosition(rawValue: rawValue) ?? .default
+        self.nskImagePosition = NSKImagePosition(rawValue: rawValue) ?? .default
         
         if let string = aDecoder.decodeObject(forKey: NSKImageLayoutKey) as? String,
             let cl = NSClassFromString(string) as? NSKDefaultImageLayout.Type {
@@ -143,6 +143,37 @@ open class NSKButton: UIButton {
         } else {
             
             self.nskImageLayout = NSKDefaultImageLayout.self
+        }
+    }
+    
+    open func setNskImagePosition(_ imagePosition: NSKImagePosition, autoInvalidate: Bool) {
+        
+        if autoInvalidate {
+            
+            self.nskImagePosition = imagePosition
+            
+        } else {
+            
+            self._nskImagePosition = imagePosition
+            self.invalidateNskImageLayout(with: imagePosition)
+        }
+    }
+    
+    private func invalidateNskImageLayout(with imagePosition: NSKImagePosition) {
+        
+        switch imagePosition {
+            
+        case .default:
+            self.nskImageLayout = NSKDefaultImageLayout.self
+            
+        case .right:
+            self.nskImageLayout = NSKRightImageLayout.self
+            
+        case .top:
+            self.nskImageLayout = NSKTopImageLayout.self
+            
+        case .bottom:
+            self.nskImageLayout = NSKBottomImageLayout.self
         }
     }
 }
