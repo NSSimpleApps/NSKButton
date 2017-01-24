@@ -24,7 +24,6 @@ private func CGRect(rect: CGRect, movingBy x: CGFloat) -> CGRect {
     return newRect
 }
 
-@objc(NSKRightImageLayout)
 internal class NSKRightImageLayout: NSKDefaultImageLayout {
     
     override static func titleRect(forContentRect contentRect: CGRect,

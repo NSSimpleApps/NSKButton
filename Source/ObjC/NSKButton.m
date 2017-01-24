@@ -13,7 +13,6 @@
 #import "NSKBottomImageLayout.h"
 
 static NSString *const NSKImagePositionKey = @"nskImagePosition";
-static NSString *const NSKImageLayoutKey = @"nskImageLayout";
 
 @interface NSKButton ()
 
@@ -94,7 +93,6 @@ static NSString *const NSKImageLayoutKey = @"nskImageLayout";
     [super encodeWithCoder:aCoder];
     
     [aCoder encodeInteger:self.nskImagePosition forKey:NSKImagePositionKey];
-    [aCoder encodeObject:NSStringFromClass(self.nskImageLayout) forKey:NSKImageLayoutKey];
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
@@ -102,26 +100,6 @@ static NSString *const NSKImageLayoutKey = @"nskImageLayout";
     self = [super initWithCoder:aDecoder];
     
     if (self) {
-        
-        NSString *nskImageLayoutString = [aDecoder decodeObjectForKey:NSKImageLayoutKey];
-        
-        if (nskImageLayoutString == nil) {
-            
-            self.nskImageLayout = [NSKDefaultImageLayout class];
-            
-        } else {
-            
-            Class decodedClass = NSClassFromString(nskImageLayoutString);
-            
-            if (decodedClass == Nil) {
-                
-                self.nskImageLayout = [NSKDefaultImageLayout class];
-                
-            } else {
-                
-                self.nskImageLayout = decodedClass;
-            }
-        }
         
         NSInteger decodedInteger = [aDecoder decodeIntegerForKey:NSKImagePositionKey];
         
@@ -133,6 +111,8 @@ static NSString *const NSKImageLayoutKey = @"nskImageLayout";
             
             _nskImagePosition = NSKImagePositionDefault;
         }
+        
+        [self invalidateNskImageLayoutWithImagePosition:_nskImagePosition];
     }
     
     return self;

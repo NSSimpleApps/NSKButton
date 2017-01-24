@@ -9,7 +9,6 @@
 import UIKit
 
 private let NSKImagePositionKey = #keyPath(NSKButton.nskImagePosition)
-private let NSKImageLayoutKey = "nskImageLayout"
 
 
 @objc public enum NSKImagePosition: Int {
@@ -125,7 +124,6 @@ open class NSKButton: UIButton {
         super.encode(with: aCoder)
         
         aCoder.encode(self.nskImagePosition.rawValue, forKey: NSKImagePositionKey)
-        aCoder.encode(NSStringFromClass(self.nskImageLayout), forKey: NSKImageLayoutKey)
     }
     
     public required init?(coder aDecoder: NSCoder) {
@@ -133,17 +131,9 @@ open class NSKButton: UIButton {
         super.init(coder: aDecoder)
         
         let rawValue = aDecoder.decodeInteger(forKey: NSKImagePositionKey)
-        self.nskImagePosition = NSKImagePosition(rawValue: rawValue) ?? .default
+        self._nskImagePosition = NSKImagePosition(rawValue: rawValue) ?? .default
         
-        if let string = aDecoder.decodeObject(forKey: NSKImageLayoutKey) as? String,
-            let cl = NSClassFromString(string) as? NSKDefaultImageLayout.Type {
-            
-            self.nskImageLayout = cl
-            
-        } else {
-            
-            self.nskImageLayout = NSKDefaultImageLayout.self
-        }
+        self.invalidateNskImageLayout(with: self._nskImagePosition)
     }
     
     open func setNskImagePosition(_ imagePosition: NSKImagePosition, autoInvalidate: Bool) {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc(NSKBottomImageLayout)
+
 internal class NSKBottomImageLayout: NSKVerticalImageLayout {
     
     override static func titleRect(forContentRect contentRect: CGRect,

@@ -8,13 +8,9 @@
 
 import UIKit
 
-@objc (NSKDefaultImageLayout)
-internal class NSKDefaultImageLayout: NSObject {
+internal class NSKDefaultImageLayout {
     
-    fileprivate override init() {
-        
-        super.init()
-    }
+    private init() { }
     
     class func titleRect(forContentRect contentRect: CGRect,
                          defaultTitleRect: CGRect,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc(NSKTopImageLayout)
+
 internal class NSKTopImageLayout: NSKVerticalImageLayout {
     
     override static func titleRect(forContentRect contentRect: CGRect,

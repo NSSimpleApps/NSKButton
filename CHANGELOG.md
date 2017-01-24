@@ -1,3 +1,8 @@
+## 0.4.1 (2017-01-24)
+
+- fixed `NSCoding` conformance
+- some internal improvements
+
 ## 0.4 (2017-01-17)
 
 - added `- (void)setNskImagePosition:(NSKImagePosition)imagePosition autoInvalidate:(BOOL)autoInvalidate`

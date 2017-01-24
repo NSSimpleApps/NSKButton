@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc(NSKVerticalImageLayout)
+
 internal class NSKVerticalImageLayout: NSKDefaultImageLayout {
     
     override static func intrinsicContentSize(forDefaultIntrinsicContentSize defaultIntrinsicContentSize: CGSize,
