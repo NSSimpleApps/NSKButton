@@ -1,3 +1,7 @@
+## 0.5 (2017-09-22)
+
+- Bump to Swift 4.
+
 ## 0.4.1 (2017-01-24)
 
 - fixed `NSCoding` conformance

@@ -23,9 +23,7 @@ static NSString *const NSKImagePositionKey = @"nskImagePosition";
 @implementation NSKButton
 
 - (Class)nskImageLayout {
-    
     if (_nskImageLayout == Nil) {
-        
         _nskImageLayout = [NSKDefaultImageLayout class];
     }
     
@@ -35,24 +33,19 @@ static NSString *const NSKImagePositionKey = @"nskImagePosition";
 - (void)setNskImagePosition:(NSKImagePosition)nskImagePosition {
     
     if ((nskImagePosition >= 0) && (nskImagePosition <= 3) && (_nskImagePosition != nskImagePosition)) {
-        
         [self invalidateNskImageLayoutWithImagePosition:nskImagePosition];
         
         if ((ABS(_nskImagePosition - nskImagePosition) >= 2) ||
             ((_nskImagePosition == NSKImagePositionRight) && (nskImagePosition == NSKImagePositionTop)) ||
             ((_nskImagePosition == NSKImagePositionTop) && (nskImagePosition == NSKImagePositionRight))) {
-            
             [self invalidateIntrinsicContentSize];
         }
-        
         _nskImagePosition = nskImagePosition;
-        
         [self setNeedsLayout];
     }
 }
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect {
-    
     CGRect defaultTitleRect = [super titleRectForContentRect:contentRect];
     CGRect imageRect = [super imageRectForContentRect:contentRect];
     
@@ -63,7 +56,6 @@ static NSString *const NSKImagePositionKey = @"nskImagePosition";
 }
 
 - (CGRect)imageRectForContentRect:(CGRect)contentRect {
-    
     CGRect titleRect = [super titleRectForContentRect:contentRect];
     CGRect defaultImageRect = [super imageRectForContentRect:contentRect];
     
@@ -74,7 +66,6 @@ static NSString *const NSKImagePositionKey = @"nskImagePosition";
 }
 
 - (CGSize)intrinsicContentSize {
-    
     CGRect contentRect = [self contentRectForBounds:self.bounds];
     CGRect imageRect = [super imageRectForContentRect:contentRect];
     CGRect titleRect = [super titleRectForContentRect:contentRect];
@@ -89,43 +80,34 @@ static NSString *const NSKImagePositionKey = @"nskImagePosition";
 #pragma -mark NSCoding-protocol conformance
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-    
     [super encodeWithCoder:aCoder];
     
     [aCoder encodeInteger:self.nskImagePosition forKey:NSKImagePositionKey];
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    
     self = [super initWithCoder:aDecoder];
     
     if (self) {
-        
         NSInteger decodedInteger = [aDecoder decodeIntegerForKey:NSKImagePositionKey];
         
         if (decodedInteger >= 0 && decodedInteger <= 3) {
-            
             _nskImagePosition = decodedInteger;
             
         } else {
-            
             _nskImagePosition = NSKImagePositionDefault;
         }
-        
         [self invalidateNskImageLayoutWithImagePosition:_nskImagePosition];
     }
-    
     return self;
 }
 
 - (void)setNskImagePosition:(NSKImagePosition)imagePosition autoInvalidate:(BOOL)autoInvalidate {
     
     if (autoInvalidate) {
-        
         self.nskImagePosition = imagePosition;
         
     } else {
-        
         _nskImagePosition = imagePosition;
         [self invalidateNskImageLayoutWithImagePosition:imagePosition];
     }
@@ -134,7 +116,6 @@ static NSString *const NSKImagePositionKey = @"nskImagePosition";
 - (void)invalidateNskImageLayoutWithImagePosition:(NSKImagePosition)imagePosition {
     
     switch (imagePosition) {
-            
         case NSKImagePositionDefault:
             self.nskImageLayout = [NSKDefaultImageLayout class];
             break;

@@ -16,7 +16,6 @@ internal class NSKDefaultImageLayout {
                          defaultTitleRect: CGRect,
                          imageRect: CGRect,
                          titleEdgeInsets: UIEdgeInsets) -> CGRect {
-        
         return defaultTitleRect
     }
     
@@ -24,14 +23,12 @@ internal class NSKDefaultImageLayout {
                          defaultImageRect: CGRect,
                          titleRect: CGRect,
                          imageEdgeInsets: UIEdgeInsets) -> CGRect {
-        
         return defaultImageRect
     }
     
     class func intrinsicContentSize(forDefaultIntrinsicContentSize defaultIntrinsicContentSize: CGSize,
                                     imageRect: CGRect,
                                     titleRect: CGRect) -> CGSize {
-        
         return defaultIntrinsicContentSize
     }
 }

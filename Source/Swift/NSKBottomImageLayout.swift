@@ -17,14 +17,12 @@ internal class NSKBottomImageLayout: NSKVerticalImageLayout {
                                   titleEdgeInsets: UIEdgeInsets) -> CGRect {
         
         if defaultTitleRect.isEmpty {
-            
             return super.titleRect(forContentRect: contentRect,
                                    defaultTitleRect: defaultTitleRect,
                                    imageRect: imageRect,
                                    titleEdgeInsets: titleEdgeInsets)
             
         } else {
-            
             return CGRect(x: contentRect.midX - defaultTitleRect.width/2 + titleEdgeInsets.left - titleEdgeInsets.right,
                           y: contentRect.minY + titleEdgeInsets.top - titleEdgeInsets.bottom,
                           width: defaultTitleRect.width,
@@ -38,14 +36,12 @@ internal class NSKBottomImageLayout: NSKVerticalImageLayout {
                                   imageEdgeInsets: UIEdgeInsets) -> CGRect {
         
         if defaultImageRect.isEmpty {
-            
             return super.imageRect(forContentRect: contentRect,
                                    defaultImageRect: defaultImageRect,
                                    titleRect: titleRect,
                                    imageEdgeInsets: imageEdgeInsets)
             
         } else {
-            
             return CGRect(x: contentRect.midX - defaultImageRect.width/2 + imageEdgeInsets.left - imageEdgeInsets.right,
                           y: contentRect.maxY - defaultImageRect.height + imageEdgeInsets.top - imageEdgeInsets.bottom,
                           width: defaultImageRect.width,

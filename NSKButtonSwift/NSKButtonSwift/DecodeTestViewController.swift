@@ -24,10 +24,8 @@ class DecodeTestViewController: UIViewController {
             
             self.view.addSubview(button)
             
-            let horizontalConstraint = button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
-            let vertivalConstraint = button.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
-            
-            NSLayoutConstraint.activate([horizontalConstraint, vertivalConstraint])
+            NSLayoutConstraint(item: button, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
+            NSLayoutConstraint(item: button, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
         }
     }
 }

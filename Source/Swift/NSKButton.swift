@@ -22,27 +22,20 @@ private let NSKImagePositionKey = #keyPath(NSKButton.nskImagePosition)
 open class NSKButton: UIButton {
     
     override public init(frame: CGRect) {
-        
         super.init(frame: frame)
     }
     
     private var nskImageLayout = NSKDefaultImageLayout.self
-    
     
     #if TARGET_INTERFACE_BUILDER
     private var _nskImagePosition: Int = 0
     @IBInspectable open var nskImagePosition: Int {
     
         get { return self._nskImagePosition }
-    
         set {
-    
             if (0...3 ~= newValue) && (newValue != self._nskImagePosition) {
-    
                 let oldValue = NSKImagePosition(rawValue: self._nskImagePosition)!
-    
                 self._nskImagePosition = newValue
-    
                 self.invalidateImagePosition(with: oldValue, newValue: NSKImagePosition(rawValue: newValue)!)
             }
         }
@@ -51,18 +44,13 @@ open class NSKButton: UIButton {
     #else
     
     private var _nskImagePosition: NSKImagePosition = .default
-    open var nskImagePosition: NSKImagePosition {
+    @objc open var nskImagePosition: NSKImagePosition {
         
         get { return self._nskImagePosition }
-        
         set {
-            
             if newValue != self._nskImagePosition {
-                
                 let oldValue = self._nskImagePosition
-                
                 self._nskImagePosition = newValue
-                
                 self.invalidateImagePosition(oldValue: oldValue,
                                              newValue: newValue)
             }
@@ -71,8 +59,7 @@ open class NSKButton: UIButton {
     #endif
     
     private func invalidateImagePosition(oldValue: NSKImagePosition,
-                                             newValue: NSKImagePosition) {
-        
+                                         newValue: NSKImagePosition) {
         self.invalidateNskImageLayout(with: newValue)
         
         if (abs(oldValue.rawValue - newValue.rawValue) >= 2) ||
@@ -86,7 +73,6 @@ open class NSKButton: UIButton {
     }
     
     override open func titleRect(forContentRect contentRect: CGRect) -> CGRect {
-        
         let titleRect = super.titleRect(forContentRect: contentRect)
         let imageRect = super.imageRect(forContentRect: contentRect)
         
@@ -97,7 +83,6 @@ open class NSKButton: UIButton {
     }
     
     override open func imageRect(forContentRect contentRect: CGRect) -> CGRect {
-        
         let titleRect = super.titleRect(forContentRect: contentRect)
         let imageRect = super.imageRect(forContentRect: contentRect)
         
@@ -108,7 +93,6 @@ open class NSKButton: UIButton {
     }
     
     override open var intrinsicContentSize : CGSize {
-        
         let contentRect = self.contentRect(forBounds: self.bounds)
         let imageRect = super.imageRect(forContentRect: contentRect)
         let titleRect = super.titleRect(forContentRect: contentRect)
@@ -120,48 +104,38 @@ open class NSKButton: UIButton {
     }
     
     open override func encode(with aCoder: NSCoder) {
-        
         super.encode(with: aCoder)
         
         aCoder.encode(self.nskImagePosition.rawValue, forKey: NSKImagePositionKey)
     }
     
     public required init?(coder aDecoder: NSCoder) {
-        
         super.init(coder: aDecoder)
         
         let rawValue = aDecoder.decodeInteger(forKey: NSKImagePositionKey)
         self._nskImagePosition = NSKImagePosition(rawValue: rawValue) ?? .default
-        
         self.invalidateNskImageLayout(with: self._nskImagePosition)
     }
     
     open func setNskImagePosition(_ imagePosition: NSKImagePosition, autoInvalidate: Bool) {
-        
         if autoInvalidate {
-            
             self.nskImagePosition = imagePosition
             
         } else {
-            
             self._nskImagePosition = imagePosition
             self.invalidateNskImageLayout(with: imagePosition)
         }
     }
     
     private func invalidateNskImageLayout(with imagePosition: NSKImagePosition) {
-        
         switch imagePosition {
             
         case .default:
             self.nskImageLayout = NSKDefaultImageLayout.self
-            
         case .right:
             self.nskImageLayout = NSKRightImageLayout.self
-            
         case .top:
             self.nskImageLayout = NSKTopImageLayout.self
-            
         case .bottom:
             self.nskImageLayout = NSKBottomImageLayout.self
         }
