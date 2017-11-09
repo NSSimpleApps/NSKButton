@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UhX-Fq-vEb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UhX-Fq-vEb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="CJx-tI-9DH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bkG-OD-ROq">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jr-59-ZgA" customClass="NSKButton" customModule="NSKButtonSwift" customModuleProvider="target">
@@ -36,11 +36,28 @@
                                     <action selector="changeImagePosition:" destination="fOt-3H-QZa" eventType="touchUpInside" id="evc-6a-bIg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoj-5g-L9Y" customClass="NSKButton" customModule="NSKButtonSwift" customModuleProvider="target">
+                                <rect key="frame" x="122" y="63" width="130" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Default" image="big_image">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="nskImagePosition">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeImagePosition:" destination="fOt-3H-QZa" eventType="touchUpInside" id="DHp-cW-WIS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="uoj-5g-L9Y" firstAttribute="top" secondItem="24V-KB-bCq" secondAttribute="bottom" constant="63" id="aqY-Yt-NcM"/>
                             <constraint firstItem="0jr-59-ZgA" firstAttribute="centerX" secondItem="bkG-OD-ROq" secondAttribute="centerX" id="cVp-DV-IRq"/>
                             <constraint firstItem="0jr-59-ZgA" firstAttribute="centerY" secondItem="bkG-OD-ROq" secondAttribute="centerY" id="nD0-6d-Wlm"/>
+                            <constraint firstItem="uoj-5g-L9Y" firstAttribute="centerX" secondItem="bkG-OD-ROq" secondAttribute="centerX" id="xPl-Xv-uAw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="NSKButton" id="Mfm-if-AdN">
@@ -53,7 +70,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="nskButton" destination="0jr-59-ZgA" id="ieu-Vz-Dvr"/>
+                        <outlet property="nskButton1" destination="0jr-59-ZgA" id="khS-zQ-0MG"/>
+                        <outlet property="nskButton2" destination="uoj-5g-L9Y" id="enj-MB-mbu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQo-fA-Sxc" sceneMemberID="firstResponder"/>
@@ -69,7 +87,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1YN-iZ-zLf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gOq-83-FDU">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -84,7 +102,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UhX-Fq-vEb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="dQP-Mj-WTd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -98,6 +116,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="big_image" width="80" height="80"/>
         <image name="image" width="20" height="20"/>
     </resources>
 </document>

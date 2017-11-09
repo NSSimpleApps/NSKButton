@@ -10,7 +10,8 @@ import UIKit
 
 
 class ViewController: UIViewController {
-    @IBOutlet weak var nskButton: NSKButton!
+    @IBOutlet weak var nskButton1: NSKButton!
+    @IBOutlet weak var nskButton2: NSKButton!
 
     fileprivate var buttonTitles = ["Default", "Right", "Top", "Bottom"]
     
@@ -41,25 +42,25 @@ class ViewController: UIViewController {
         self.setToolbarItems([flexibleItem, buttonItem1, flexibleItem, buttonItem2, flexibleItem], animated: false)
         self.navigationController?.setToolbarHidden(false, animated: false)
         
-        self.nskButton.layer.borderColor =
+        self.nskButton1.layer.borderColor =
             UIColor(red: 0, green: CGFloat(122)/255, blue: 1, alpha: 1).cgColor
-        self.nskButton.layer.borderWidth = 1
-        self.nskButton.setTitle(self.buttonTitles.first, for: .normal)
+        self.nskButton1.layer.borderWidth = 1
+        self.nskButton1.setTitle(self.buttonTitles.first, for: .normal)
+        
+        self.nskButton2.layer.borderColor =
+            UIColor(red: 0, green: CGFloat(122)/255, blue: 1, alpha: 1).cgColor
+        self.nskButton2.layer.borderWidth = 1
+        self.nskButton2.setTitle(self.buttonTitles.first, for: .normal)
     }
     
     @IBAction func changeImagePosition(_ sender: NSKButton) {
-    
         if (sender.nskImagePosition == .bottom) {
-    
             sender.nskImagePosition = .default
         
         } else {
-            
             let rawValue = sender.nskImagePosition.rawValue
-            
             sender.nskImagePosition = NSKImagePosition(rawValue: rawValue + 1)!
         }
-    
         sender.setTitle(self.buttonTitles[sender.nskImagePosition.rawValue], for: .normal)
     }
     
@@ -68,7 +69,7 @@ class ViewController: UIViewController {
         if segue.identifier == "ShowDecodeTestSegue" {
     
             let decodeTestViewController = segue.destination as! DecodeTestViewController
-            decodeTestViewController.data = NSKeyedArchiver.archivedData(withRootObject: self.nskButton)
+            decodeTestViewController.data = NSKeyedArchiver.archivedData(withRootObject: self.nskButton1)
         }
     }
 }

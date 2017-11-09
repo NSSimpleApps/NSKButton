@@ -13,14 +13,11 @@ class DecodeTestViewController: UIViewController {
     var data: Data!
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
 
         self.title = "Decode NSKButton"
         
         if let button = NSKeyedUnarchiver.unarchiveObject(with: self.data) as? NSKButton {
-            
-            button.center = self.view.center
             
             self.view.addSubview(button)
             
