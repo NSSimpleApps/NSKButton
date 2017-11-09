@@ -1,3 +1,6 @@
+## 0.6 (2017-11-09)
+- Fix layout for `NSKImagePositionTop` and `NSKImagePositionBottom`
+
 ## 0.5 (2017-09-22)
 
 - Bump to Swift 4.

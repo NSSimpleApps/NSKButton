@@ -14,10 +14,8 @@
                                imageRect:(CGRect)imageRect
                                titleRect:(CGRect)titleRect {
     
-    CGSize intrinsicContentSize = defaultIntrinsicContentSize;
-    intrinsicContentSize.height += MIN(imageRect.size.height, titleRect.size.height);
-    
-    return intrinsicContentSize;
+    return CGSizeMake(MAX(imageRect.size.width, titleRect.size.width),
+                      imageRect.size.height + titleRect.size.height);
 }
 
 @end

@@ -46,8 +46,17 @@ static NSString *const NSKImagePositionKey = @"nskImagePosition";
 }
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect {
-    CGRect defaultTitleRect = [super titleRectForContentRect:contentRect];
-    CGRect imageRect = [super imageRectForContentRect:contentRect];
+    CGRect content;
+    
+    if (_nskImagePosition == NSKImagePositionTop ||
+        _nskImagePosition == NSKImagePositionBottom) {
+        content = CGRectInfinite;
+        
+    } else {
+        content = contentRect;
+    }
+    CGRect defaultTitleRect = [super titleRectForContentRect:content];
+    CGRect imageRect = [super imageRectForContentRect:content];
     
     return [self.nskImageLayout titleRectForContentRect:contentRect
                                        defaultTitleRect:defaultTitleRect
@@ -56,8 +65,17 @@ static NSString *const NSKImagePositionKey = @"nskImagePosition";
 }
 
 - (CGRect)imageRectForContentRect:(CGRect)contentRect {
-    CGRect titleRect = [super titleRectForContentRect:contentRect];
-    CGRect defaultImageRect = [super imageRectForContentRect:contentRect];
+    CGRect content;
+    
+    if (_nskImagePosition == NSKImagePositionTop ||
+        _nskImagePosition == NSKImagePositionBottom) {
+        content = CGRectInfinite;
+        
+    } else {
+        content = contentRect;
+    }
+    CGRect titleRect = [super titleRectForContentRect:content];
+    CGRect defaultImageRect = [super imageRectForContentRect:content];
     
     return [self.nskImageLayout imageRectForContentRect:contentRect
                                        defaultImageRect:defaultImageRect
@@ -66,9 +84,8 @@ static NSString *const NSKImagePositionKey = @"nskImagePosition";
 }
 
 - (CGSize)intrinsicContentSize {
-    CGRect contentRect = [self contentRectForBounds:self.bounds];
-    CGRect imageRect = [super imageRectForContentRect:contentRect];
-    CGRect titleRect = [super titleRectForContentRect:contentRect];
+    CGRect imageRect = [super imageRectForContentRect:CGRectInfinite];
+    CGRect titleRect = [super titleRectForContentRect:CGRectInfinite];
     CGSize defaultIntrinsicContentSize = [super intrinsicContentSize];
     
     return

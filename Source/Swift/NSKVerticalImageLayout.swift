@@ -14,11 +14,8 @@ internal class NSKVerticalImageLayout: NSKDefaultImageLayout {
     override static func intrinsicContentSize(forDefaultIntrinsicContentSize defaultIntrinsicContentSize: CGSize,
                                               imageRect: CGRect,
                                               titleRect: CGRect) -> CGSize {
-        let height = min(imageRect.height, titleRect.height)
         
-        var intrinsicContentSize = defaultIntrinsicContentSize
-        intrinsicContentSize.height += height
-        
-        return intrinsicContentSize
+        return CGSize(width: max(titleRect.width, imageRect.width),
+                      height: titleRect.height + imageRect.height)
     }
 }

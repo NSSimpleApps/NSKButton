@@ -9,7 +9,6 @@
 #import "NSKRightImageLayout.h"
 
 CGRect CGRectFlippingChildRect(CGRect childRect, CGRect parentRect) {
-    
     CGRect newRect = childRect;
     newRect.origin.x = 2 * CGRectGetMidX(parentRect) - CGRectGetMaxX(childRect);
     
@@ -17,10 +16,9 @@ CGRect CGRectFlippingChildRect(CGRect childRect, CGRect parentRect) {
 }
     
 CGRect CGRectMovingByX(CGFloat x, CGRect rect) {
-        
     CGRect newRect = rect;
     newRect.origin.x += x;
-        
+    
     return newRect;
 }
 
@@ -32,14 +30,12 @@ CGRect CGRectMovingByX(CGFloat x, CGRect rect) {
                   titleEdgeInsets:(UIEdgeInsets)titleEdgeInsets {
     
     if (CGRectIsEmpty(defaultTitleRect)) {
-        
         return [super titleRectForContentRect:contentRect
                              defaultTitleRect:defaultTitleRect
                                     imageRect:imageRect
                               titleEdgeInsets:titleEdgeInsets];
         
     } else {
-        
         CGRect shiftedTitleRect =
         CGRectMovingByX(-(titleEdgeInsets.left - titleEdgeInsets.right), defaultTitleRect);
         
@@ -53,16 +49,13 @@ CGRect CGRectMovingByX(CGFloat x, CGRect rect) {
                   imageEdgeInsets:(UIEdgeInsets)imageEdgeInsets {
     
     if (CGRectIsEmpty(defaultImageRect)) {
-        
         return [super imageRectForContentRect:contentRect
                              defaultImageRect:defaultImageRect
                                     titleRect:titleRect
                               imageEdgeInsets:imageEdgeInsets];
         
     } else {
-        
         CGRect shiftedImageRect = CGRectMovingByX(-imageEdgeInsets.left, defaultImageRect);
-        
         CGRect flippedImageRect = CGRectFlippingChildRect(shiftedImageRect, contentRect);
         
         return CGRectMovingByX(imageEdgeInsets.left, flippedImageRect);

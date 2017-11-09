@@ -73,8 +73,16 @@ open class NSKButton: UIButton {
     }
     
     override open func titleRect(forContentRect contentRect: CGRect) -> CGRect {
-        let titleRect = super.titleRect(forContentRect: contentRect)
-        let imageRect = super.imageRect(forContentRect: contentRect)
+        let content: CGRect = {
+            if self._nskImagePosition == .bottom || self._nskImagePosition == .top {
+                return CGRect.infinite
+                
+            } else {
+                return contentRect
+            }
+        }()
+        let titleRect = super.titleRect(forContentRect: content)
+        let imageRect = super.imageRect(forContentRect: content)
         
         return self.nskImageLayout.titleRect(forContentRect: contentRect,
                                              defaultTitleRect: titleRect,
@@ -83,8 +91,16 @@ open class NSKButton: UIButton {
     }
     
     override open func imageRect(forContentRect contentRect: CGRect) -> CGRect {
-        let titleRect = super.titleRect(forContentRect: contentRect)
-        let imageRect = super.imageRect(forContentRect: contentRect)
+        let content: CGRect = {
+            if self._nskImagePosition == .bottom || self._nskImagePosition == .top {
+                return CGRect.infinite
+                
+            } else {
+                return contentRect
+            }
+        }()
+        let titleRect = super.titleRect(forContentRect: content)
+        let imageRect = super.imageRect(forContentRect: content)
         
         return self.nskImageLayout.imageRect(forContentRect: contentRect,
                                              defaultImageRect: imageRect,
@@ -93,9 +109,8 @@ open class NSKButton: UIButton {
     }
     
     override open var intrinsicContentSize : CGSize {
-        let contentRect = self.contentRect(forBounds: self.bounds)
-        let imageRect = super.imageRect(forContentRect: contentRect)
-        let titleRect = super.titleRect(forContentRect: contentRect)
+        let imageRect = super.imageRect(forContentRect: CGRect.infinite)
+        let titleRect = super.titleRect(forContentRect: CGRect.infinite)
         let defaultIntrinsicContentSize = super.intrinsicContentSize
         
         return self.nskImageLayout.intrinsicContentSize(forDefaultIntrinsicContentSize: defaultIntrinsicContentSize,

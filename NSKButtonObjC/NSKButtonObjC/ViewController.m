@@ -12,7 +12,8 @@
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet NSKButton *nskButton;
+@property (weak, nonatomic) IBOutlet NSKButton *nskButton1;
+@property (weak, nonatomic) IBOutlet NSKButton *nskButton2;
 
 @property (strong, nonatomic) NSArray<NSString *> *buttonTitles;
 
@@ -55,23 +56,27 @@
     
     self.buttonTitles = @[@"Default", @"Right", @"Top", @"Bottom"];
     
-    self.nskButton.layer.borderColor = [UIColor colorWithRed:0
+    self.nskButton1.layer.borderColor = [UIColor colorWithRed:0
                                                        green:122./255
                                                         blue:1
                                                        alpha:1].CGColor;
-    self.nskButton.layer.borderWidth = 1;
-    [self.nskButton setTitle:self.buttonTitles.firstObject forState:UIControlStateNormal];
+    self.nskButton1.layer.borderWidth = 1;
+    [self.nskButton1 setTitle:self.buttonTitles.firstObject forState:UIControlStateNormal];
+    
+    self.nskButton2.layer.borderColor = [UIColor colorWithRed:0
+                                                        green:122./255
+                                                         blue:1
+                                                        alpha:1].CGColor;
+    self.nskButton2.layer.borderWidth = 1;
+    [self.nskButton2 setTitle:self.buttonTitles.firstObject forState:UIControlStateNormal];
 }
 
 
 - (IBAction)changeImagePosition:(NSKButton *)sender {
-    
     if (sender.nskImagePosition == NSKImagePositionBottom) {
-        
         sender.nskImagePosition = NSKImagePositionDefault;
         
     } else {
-        
         sender.nskImagePosition++;
     }
     
@@ -83,7 +88,7 @@
     if ([segue.identifier isEqualToString:@"ShowDecodeTestSegue"]) {
         
         DecodeTestViewController *decodeTestViewController = segue.destinationViewController;
-        decodeTestViewController.data = [NSKeyedArchiver archivedDataWithRootObject:self.nskButton];
+        decodeTestViewController.data = [NSKeyedArchiver archivedDataWithRootObject:self.nskButton1];
     }
 }
 
