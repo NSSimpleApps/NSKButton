@@ -51,12 +51,46 @@
                                     <action selector="changeImagePosition:" destination="fOt-3H-QZa" eventType="touchUpInside" id="DHp-cW-WIS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLP-Dm-QRe" customClass="NSKButton" customModule="NSKButtonSwift" customModuleProvider="target">
+                                <rect key="frame" x="162" y="151" width="50" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Default">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="nskImagePosition">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeImagePosition:" destination="fOt-3H-QZa" eventType="touchUpInside" id="LdC-mb-gfD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp5-PP-1iH" customClass="NSKButton" customModule="NSKButtonSwift" customModuleProvider="target">
+                                <rect key="frame" x="177" y="332" width="20" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="image">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="nskImagePosition">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeImagePosition:" destination="fOt-3H-QZa" eventType="touchUpInside" id="DKT-AD-v9w"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gp5-PP-1iH" firstAttribute="centerX" secondItem="0jr-59-ZgA" secondAttribute="centerX" id="TIz-DC-r5i"/>
+                            <constraint firstItem="CLP-Dm-QRe" firstAttribute="centerX" secondItem="uoj-5g-L9Y" secondAttribute="centerX" id="ToC-Dy-5dO"/>
+                            <constraint firstItem="CLP-Dm-QRe" firstAttribute="top" secondItem="uoj-5g-L9Y" secondAttribute="bottom" constant="8" id="Wkl-6J-7JB"/>
                             <constraint firstItem="uoj-5g-L9Y" firstAttribute="top" secondItem="24V-KB-bCq" secondAttribute="bottom" constant="63" id="aqY-Yt-NcM"/>
                             <constraint firstItem="0jr-59-ZgA" firstAttribute="centerX" secondItem="bkG-OD-ROq" secondAttribute="centerX" id="cVp-DV-IRq"/>
                             <constraint firstItem="0jr-59-ZgA" firstAttribute="centerY" secondItem="bkG-OD-ROq" secondAttribute="centerY" id="nD0-6d-Wlm"/>
+                            <constraint firstItem="gp5-PP-1iH" firstAttribute="top" secondItem="0jr-59-ZgA" secondAttribute="bottom" constant="8" id="p8S-BS-36q"/>
                             <constraint firstItem="uoj-5g-L9Y" firstAttribute="centerX" secondItem="bkG-OD-ROq" secondAttribute="centerX" id="xPl-Xv-uAw"/>
                         </constraints>
                     </view>

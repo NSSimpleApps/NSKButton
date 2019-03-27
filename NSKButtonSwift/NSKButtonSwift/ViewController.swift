@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         if segue.identifier == "ShowDecodeTestSegue" {
     
             let decodeTestViewController = segue.destination as! DecodeTestViewController
-            decodeTestViewController.data = NSKeyedArchiver.archivedData(withRootObject: self.nskButton1)
+            decodeTestViewController.data = NSKeyedArchiver.archivedData(withRootObject: self.nskButton1!)
         }
     }
 }

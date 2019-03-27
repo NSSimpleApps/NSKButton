@@ -1,3 +1,6 @@
+## 0.6 (2019-03-28)
+- Bump to swift5.
+
 ## 0.6 (2017-11-09)
 - Fix layout for `NSKImagePositionTop` and `NSKImagePositionBottom`
 
